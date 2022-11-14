@@ -1,0 +1,8 @@
+datatypes\WsParam.class
+util\Constants.class
+datatypes\WsResponse.class
+util\Util.class
+ejb\RemoteEjbMessaging.class
+test\test.class
+ejb\EjbMessaging.class
+ejb\client.class

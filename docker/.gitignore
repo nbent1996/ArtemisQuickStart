@@ -1,0 +1,6 @@
+standaloneCFB2Bn1/deployment/*
+standaloneCFB2Bn2/deployment/*
+standaloneCFCOREn1/deployment/*
+standaloneCFCOREn2/deployment/*
+CFBROKERn1/broker/data/journal/activemq-data-*
+CFBROKERn2/broker/data/journal/activemq-data-*

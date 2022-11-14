@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="EjbMessaging" targetNamespace="http://ejb/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ejb/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:message name="enviarMensajesColaResponse">
+    <wsdl:part name="return" type="xsd:boolean">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarCDATACola">
+    <wsdl:part name="QueueJNDI" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="CDATA" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarCDATAColaResponse">
+    <wsdl:part name="return" type="xsd:boolean">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarMensajesConFilter">
+    <wsdl:part name="QueueJNDI" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="cantMensajes" type="xsd:int">
+    </wsdl:part>
+    <wsdl:part name="filter" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarMensajesConFilterResponse">
+    <wsdl:part name="return" type="xsd:boolean">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="enviarMensajesCola">
+    <wsdl:part name="QueueJNDI" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="cantMensajes" type="xsd:int">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="EjbMessaging">
+    <wsdl:operation name="enviarCDATACola">
+      <wsdl:input name="enviarCDATACola" message="tns:enviarCDATACola">
+    </wsdl:input>
+      <wsdl:output name="enviarCDATAColaResponse" message="tns:enviarCDATAColaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarMensajesConFilter">
+      <wsdl:input name="enviarMensajesConFilter" message="tns:enviarMensajesConFilter">
+    </wsdl:input>
+      <wsdl:output name="enviarMensajesConFilterResponse" message="tns:enviarMensajesConFilterResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarMensajesCola">
+      <wsdl:input name="enviarMensajesCola" message="tns:enviarMensajesCola">
+    </wsdl:input>
+      <wsdl:output name="enviarMensajesColaResponse" message="tns:enviarMensajesColaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EjbMessagingSoapBinding" type="tns:EjbMessaging">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="enviarCDATACola">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="enviarCDATACola">
+        <soap:body use="literal" namespace="http://ejb/"/>
+      </wsdl:input>
+      <wsdl:output name="enviarCDATAColaResponse">
+        <soap:body use="literal" namespace="http://ejb/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarMensajesConFilter">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="enviarMensajesConFilter">
+        <soap:body use="literal" namespace="http://ejb/"/>
+      </wsdl:input>
+      <wsdl:output name="enviarMensajesConFilterResponse">
+        <soap:body use="literal" namespace="http://ejb/"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="enviarMensajesCola">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="enviarMensajesCola">
+        <soap:body use="literal" namespace="http://ejb/"/>
+      </wsdl:input>
+      <wsdl:output name="enviarMensajesColaResponse">
+        <soap:body use="literal" namespace="http://ejb/"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EjbMessaging">
+    <wsdl:port name="ejb" binding="tns:EjbMessagingSoapBinding">
+      <soap:address location="http://192.168.10.2:8087//services/ejb/EjbMessaging"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

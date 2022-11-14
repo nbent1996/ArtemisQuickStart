@@ -1,0 +1,9 @@
+2022-10-31 00:00:25,289 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.1GB of 83.1GB total. Usage rate is 89.1% which is below the configured <max-disk-usage>.
+2022-10-31 05:28:06,020 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 7.7GB of 83.1GB total. Usage rate is 90.7% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-10-31 05:28:21,020 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.7GB of 83.1GB total. Usage rate is 88.3% which is below the configured <max-disk-usage>.
+2022-10-31 05:28:41,021 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 7.2GB of 83.1GB total. Usage rate is 91.4% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-10-31 05:29:01,021 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.4GB of 83.1GB total. Usage rate is 88.7% which is below the configured <max-disk-usage>.
+2022-10-31 05:30:16,023 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.1GB of 83.1GB total. Usage rate is 90.2% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-10-31 05:30:21,023 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 8.4GB of 83.1GB total. Usage rate is 89.8% which is below the configured <max-disk-usage>.
+2022-10-31 05:30:31,024 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.3GB of 83.1GB total. Usage rate is 90.0% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-10-31 05:36:31,034 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.1GB of 83.1GB total. Usage rate is 89.1% which is below the configured <max-disk-usage>.

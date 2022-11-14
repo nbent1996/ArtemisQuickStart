@@ -1,0 +1,11 @@
+2022-11-01 05:28:04,278 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 6.9GB of 83.1GB total. Usage rate is 91.7% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-01 05:28:19,278 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.7GB of 83.1GB total. Usage rate is 88.4% which is below the configured <max-disk-usage>.
+2022-11-01 05:28:39,279 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 6.2GB of 83.1GB total. Usage rate is 92.5% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-01 05:28:59,280 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.4GB of 83.1GB total. Usage rate is 88.7% which is below the configured <max-disk-usage>.
+2022-11-01 05:30:14,283 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.1GB of 83.1GB total. Usage rate is 90.2% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-01 05:30:19,283 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 8.5GB of 83.1GB total. Usage rate is 89.8% which is below the configured <max-disk-usage>.
+2022-11-01 05:30:29,283 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.3GB of 83.1GB total. Usage rate is 90.0% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-01 05:36:34,295 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.1GB of 83.1GB total. Usage rate is 89.1% which is below the configured <max-disk-usage>.
+2022-11-01 12:24:19,192 INFO  [io.hawt.web.auth.LoginServlet] Logging in user: pcf
+2022-11-01 13:03:25,170 INFO  [io.hawt.web.auth.SessionExpiryFilter] Expiring session due to inactivity
+2022-11-01 19:19:48,135 INFO  [io.hawt.web.auth.LoginServlet] Logging in user: pcf

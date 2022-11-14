@@ -1,0 +1,35 @@
+2022-11-04 00:00:13,365 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.2GB of 83.1GB total. Usage rate is 90.1% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-04 00:00:23,366 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 8.9GB of 83.1GB total. Usage rate is 89.2% which is below the configured <max-disk-usage>.
+2022-11-04 05:27:34,084 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 6.6GB of 83.1GB total. Usage rate is 92.0% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-04 05:27:49,084 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 8.9GB of 83.1GB total. Usage rate is 89.2% which is below the configured <max-disk-usage>.
+2022-11-04 05:28:04,084 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.1GB of 83.1GB total. Usage rate is 90.2% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-04 05:28:24,085 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.3GB of 83.1GB total. Usage rate is 88.8% which is below the configured <max-disk-usage>.
+2022-11-04 05:29:54,087 WARN  [org.apache.activemq.artemis.core.server] AMQ222210: Free storage space is at 8.2GB of 83.1GB total. Usage rate is 90.1% which is beyond the configured <max-disk-usage>. System will start blocking producers.
+2022-11-04 05:36:04,098 INFO  [org.apache.activemq.artemis.core.server] AMQ222211: Free storage space is at 9.0GB of 83.1GB total. Usage rate is 89.2% which is below the configured <max-disk-usage>.
+2022-11-04 13:06:53,585 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure to /10.33.109.80:50289 has been detected: AMQ229014: Did not receive data from /10.33.109.80:50289 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+2022-11-04 13:06:53,604 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 687a2b7c-5c41-11ed-8c10-000aeb4148ab
+2022-11-04 13:06:53,605 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 687a2b7c-5c41-11ed-8c10-000aeb4148ab
+2022-11-04 13:06:53,605 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 68a92abd-5c41-11ed-8c10-000aeb4148ab
+2022-11-04 13:06:53,605 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 68a92abd-5c41-11ed-8c10-000aeb4148ab
+2022-11-04 13:11:41,579 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure to /10.33.109.80:54222 has been detected: AMQ229014: Did not receive data from /10.33.109.80:54222 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+2022-11-04 13:11:41,580 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 15578f12-5c42-11ed-8134-000aeb4148ab
+2022-11-04 13:11:41,580 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 15578f12-5c42-11ed-8134-000aeb4148ab
+2022-11-04 13:11:41,580 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 155a4e33-5c42-11ed-8134-000aeb4148ab
+2022-11-04 13:11:41,580 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 155a4e33-5c42-11ed-8134-000aeb4148ab
+2022-11-04 13:12:39,881 INFO  [io.hawt.web.auth.LoginServlet] Logging in user: pcf
+2022-11-04 13:12:57,597 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure to /10.33.109.80:54244 has been detected: AMQ229014: Did not receive data from /10.33.109.80:54244 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+2022-11-04 13:12:57,598 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 41d30ab7-5c42-11ed-8016-000aeb4148ab
+2022-11-04 13:12:57,599 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 41d30ab7-5c42-11ed-8016-000aeb4148ab
+2022-11-04 13:12:57,599 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 41d617f8-5c42-11ed-8016-000aeb4148ab
+2022-11-04 13:12:57,600 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 41d617f8-5c42-11ed-8016-000aeb4148ab
+2022-11-04 13:13:13,602 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure to /10.33.109.80:54250 has been detected: AMQ229014: Did not receive data from /10.33.109.80:54250 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+2022-11-04 13:13:13,604 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 4bbe413b-5c42-11ed-9bc7-000aeb4148ab
+2022-11-04 13:13:13,604 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 4bbe413b-5c42-11ed-9bc7-000aeb4148ab
+2022-11-04 13:13:13,604 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 4bc1005c-5c42-11ed-9bc7-000aeb4148ab
+2022-11-04 13:13:13,604 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 4bc1005c-5c42-11ed-9bc7-000aeb4148ab
+2022-11-04 13:14:29,617 WARN  [org.apache.activemq.artemis.core.client] AMQ212037: Connection failure to /10.33.109.80:54297 has been detected: AMQ229014: Did not receive data from /10.33.109.80:54297 within the 60,000ms connection TTL. The connection will now be closed. [code=CONNECTION_TIMEDOUT]
+2022-11-04 13:14:29,618 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 78a88490-5c42-11ed-82c6-000aeb4148ab
+2022-11-04 13:14:29,618 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 78a88490-5c42-11ed-82c6-000aeb4148ab
+2022-11-04 13:14:29,619 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 78ab6ac1-5c42-11ed-82c6-000aeb4148ab
+2022-11-04 13:14:29,619 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 78ab6ac1-5c42-11ed-82c6-000aeb4148ab
+2022-11-04 13:42:46,010 INFO  [io.hawt.web.auth.SessionExpiryFilter] Expiring session due to inactivity

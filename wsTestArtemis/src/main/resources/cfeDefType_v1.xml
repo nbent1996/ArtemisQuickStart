@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><CFE xmlns="http://cfe.dgi.gub.uy" xmlns:xd="http://www.w3.org/2000/09/xmldsig#" version="1.0">
+  <eFact>
+    <TmstFirma>2012-10-17T13:01:07-02:00</TmstFirma>
+  <Encabezado>
+    <IdDoc>
+      <TipoCFE>111</TipoCFE>
+      <Serie>FX</Serie>
+      <Nro>10562</Nro>
+      <FchEmis>2012-10-17</FchEmis>
+      <FmaPago>1</FmaPago>
+    </IdDoc>
+    <Emisor>
+      <RUCEmisor>211003420017</RUCEmisor>
+      <RznSoc>Administración Nacional de Telecomunicaciones</RznSoc>
+      <NomComercial>ANTEL</NomComercial>
+      <GiroEmis>Telecomunicaciones</GiroEmis>
+      <Telefono>29280000</Telefono>
+      <CorreoEmisor>GS-CONCILIACIONES@MAIL.ANTEL.COM.UY</CorreoEmisor>
+      <EmiSucursal/>
+      <CdgDGISucur>1</CdgDGISucur>
+      <DomFiscal>Guatemala 1075 (11800)</DomFiscal>
+      <Ciudad>Montevideo</Ciudad>
+      <Departamento>Montevideo</Departamento>
+    </Emisor>
+    <Receptor>
+      <TipoDocRecep>2</TipoDocRecep>
+      <CodPaisRecep>UY</CodPaisRecep>
+      <DocRecep>211162510010</DocRecep>
+      <RznSocRecep>PUNTO LUX S.A</RznSocRecep>
+      <DirRecep>SORIANO 1040</DirRecep>
+      <CiudadRecep>Montevideo</CiudadRecep>
+    </Receptor>
+    <Totales>
+      <TpoMoneda>UYU</TpoMoneda>
+      <TpoCambio>1.00</TpoCambio>
+      <MntNoGrv>0.00</MntNoGrv>
+      <MntNetoIvaTasaMin>0.00</MntNetoIvaTasaMin>
+      <MntNetoIVATasaBasica>3606557.42</MntNetoIVATasaBasica>
+      <IVATasaMin>10</IVATasaMin>
+      <IVATasaBasica>22</IVATasaBasica>
+      <MntIVATasaMin>0.00</MntIVATasaMin>
+      <MntIVATasaBasica>793442.63</MntIVATasaBasica>
+      <MntTotal>4400000.05</MntTotal>
+      <CantLinDet>1</CantLinDet>
+      <MontoNF>-0.05</MontoNF>
+      <MntPagar>4400000.00</MntPagar>
+    </Totales>
+  </Encabezado>
+  <Detalle>
+    <Item>
+      <NroLinDet>1</NroLinDet>
+      <IndFact>3</IndFact>
+      <NomItem>TARJETA TELECARD $500</NomItem>
+      <Cantidad>10000</Cantidad>
+      <UniMed/>
+      <PrecioUnitario>409.83</PrecioUnitario>
+      <MontoItem>4098360.70</MontoItem>
+    </Item>
+    <Item>
+				<NroLinDet>1</NroLinDet>
+				<IndFact>3</IndFact>
+				<NomItem>ADAPTADOR AMERICANO NGO 5 PTS</NomItem>
+				<Cantidad>1.000</Cantidad>
+				<UniMed>UNID</UniMed>
+				<PrecioUnitario>39.34</PrecioUnitario>
+				<DescuentoMonto>10.00</DescuentoMonto>
+				<MontoItem>29.34</MontoItem>
+			</Item>
+			<Item>
+				<NroLinDet>2</NroLinDet>
+				<IndFact>3</IndFact>
+				<NomItem>ADAPTADOR SCHUKO A 2MOD+1SCHUK</NomItem>
+				<Cantidad>1.000</Cantidad>
+				<UniMed>UNID</UniMed>
+				<PrecioUnitario>56.56</PrecioUnitario>
+				<DescuentoMonto>10.00</DescuentoMonto>
+				<MontoItem>46.56</MontoItem>
+			</Item>
+    <Item>
+      <NroLinDet>2</NroLinDet>
+      <IndFact>7</IndFact>
+      <NomItem>Redondeo</NomItem>
+      <Cantidad>0</Cantidad>
+      <UniMed/>
+      <MontoItem>-0.05</MontoItem>
+    </Item>
+  </Detalle>
+  <DscRcgGlobal>
+    <DRG_Item>
+      <NroLinDR>1</NroLinDR>
+      <TpoMovDR>D</TpoMovDR>
+      <TpoDR>2</TpoDR>
+      <CodDR>0</CodDR>
+      <GlosaDR>Descuento global CFE</GlosaDR>
+      <ValorDR>491803.28</ValorDR>
+      <IndFactDR>3</IndFactDR>
+    </DRG_Item>
+  </DscRcgGlobal>
+  <CAEData>
+    <CAE_ID>83100371498</CAE_ID>
+    <DNro>10000</DNro>
+    <HNro>11000</HNro>
+    <FecVenc>2013-04-11</FecVenc>
+  </CAEData>
+  </eFact>
+  
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>qwMyp4aP134UFz+H453h2YEzLFY=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+nmYJqBG92ioGJFisxMgr+/eoG4H2BtIE8g88Fai/sZLBd/qrssWa6zl8L1B1VGsimxBTVfaQjouT
+a5pbzzua6LoW2sWYGQ/kSs6TqYacOIQXIt/sMY+dAlcts8qfdabVhjN38WWPxruNu5cC4kAui7wG
+HWNm0nvLk2zHd+Vg/gM=
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509IssuerSerial>
+<ds:X509IssuerName>CN=FactElectTest,O=Antel,C=UY,SERIALNUMBER=RUC211003420017</ds:X509IssuerName>
+<ds:X509SerialNumber>1334329254</ds:X509SerialNumber>
+</ds:X509IssuerSerial>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature></CFE>

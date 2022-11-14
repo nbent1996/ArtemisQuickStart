@@ -1,0 +1,14 @@
+FROM quay.io/artemiscloud/activemq-artemis-broker:artemis.2.26.0
+
+USER root
+
+WORKDIR /home
+
+#Agregar customizaciones de ser necesario
+
+ENTRYPOINT ["/opt/amq/bin/launch.sh"]
+CMD ["/bin/sh","-c","/amq/scripts/post-script.sh"]
+
+
+
+

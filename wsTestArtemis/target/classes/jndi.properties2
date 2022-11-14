@@ -1,0 +1,7 @@
+java.naming.factory.initial = org.apache.activemq.jndi.ActiveMQInitialContextFactory
+java.naming.provider.url=tcp://10.97.68.53:61616
+connectionFactoryNames=connectionFactory,queueConnectionFactory,topicConnectionFactory
+queue.COREtoB2B=COREtoB2B
+queue.B2BtoCORE=B2BtoCORE
+queue.B2BtoDGI=B2BtoDGI
+queue.B2BtoEClientes=B2BtoEClientes

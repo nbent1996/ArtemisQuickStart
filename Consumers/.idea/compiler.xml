@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ConsumersPCF" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="B2BtoCORE" target="17" />
+      <module name="B2BtoDGI" target="17" />
+      <module name="B2BtoEClientes" target="17" />
+      <module name="ConsumersPCF" target="17" />
+      <module name="COREtoB2B" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
