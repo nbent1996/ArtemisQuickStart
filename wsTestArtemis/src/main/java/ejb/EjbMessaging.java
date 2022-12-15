@@ -64,21 +64,6 @@ public class EjbMessaging implements RemoteEjbMessaging {
         }
         return true;
     }
-    @WebMethod(operationName="enviarCDATACola")
-    @Override
-    public boolean enviarCDATACola(@WebParam(name = "QueueJNDI") String QueueJNDI, @WebParam(name = "CDATA") String CDATA) {
-        try{
-            Queue q = selectorQueue(QueueJNDI);
-            XmlObject cfe = Util.getXmlObjectfromCDATA(CDATA);
-            ObjectMessage objectMessage = context.createObjectMessage();
-            objectMessage.setObject((Serializable) cfe);
-            JMSProducer producer = context.createProducer();
-            producer.send(q, objectMessage);
-        } catch (Exception ex) {
-            log.log(logInfo,ex.getLocalizedMessage());
-        }
-        return true;
-    }
     private int sendMessages(JMSContext context, String QueueJNDI, int cantMensajes){
         log.log(logInfo, "Cola seleccionada: " + QueueJNDI);
         Queue queue = selectorQueue(QueueJNDI);

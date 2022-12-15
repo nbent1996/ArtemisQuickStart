@@ -47,7 +47,7 @@ fi
 HAWTIO_ROLE="NO_HAWTIO_ROLE"
 
 # Load Profile Data
-ARTEMIS_INSTANCE_ETC='/home/jboss/broker/etc'
+ARTEMIS_INSTANCE_ETC='/home/broker/etc'
 . "$ARTEMIS_INSTANCE_ETC/artemis.profile"
 
 # Set Defaults Properties

@@ -4,16 +4,6 @@
     <wsdl:part name="return" type="xsd:boolean">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="enviarCDATACola">
-    <wsdl:part name="QueueJNDI" type="xsd:string">
-    </wsdl:part>
-    <wsdl:part name="CDATA" type="xsd:string">
-    </wsdl:part>
-  </wsdl:message>
-  <wsdl:message name="enviarCDATAColaResponse">
-    <wsdl:part name="return" type="xsd:boolean">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="enviarMensajesConFilter">
     <wsdl:part name="QueueJNDI" type="xsd:string">
     </wsdl:part>
@@ -33,12 +23,6 @@
     </wsdl:part>
   </wsdl:message>
   <wsdl:portType name="EjbMessaging">
-    <wsdl:operation name="enviarCDATACola">
-      <wsdl:input name="enviarCDATACola" message="tns:enviarCDATACola">
-    </wsdl:input>
-      <wsdl:output name="enviarCDATAColaResponse" message="tns:enviarCDATAColaResponse">
-    </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="enviarMensajesConFilter">
       <wsdl:input name="enviarMensajesConFilter" message="tns:enviarMensajesConFilter">
     </wsdl:input>
@@ -54,15 +38,6 @@
   </wsdl:portType>
   <wsdl:binding name="EjbMessagingSoapBinding" type="tns:EjbMessaging">
     <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="enviarCDATACola">
-      <soap:operation soapAction="" style="rpc"/>
-      <wsdl:input name="enviarCDATACola">
-        <soap:body use="literal" namespace="http://ejb/"/>
-      </wsdl:input>
-      <wsdl:output name="enviarCDATAColaResponse">
-        <soap:body use="literal" namespace="http://ejb/"/>
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="enviarMensajesConFilter">
       <soap:operation soapAction="" style="rpc"/>
       <wsdl:input name="enviarMensajesConFilter">

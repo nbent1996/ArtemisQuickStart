@@ -26,76 +26,8 @@ under the License.
    <core xmlns="urn:activemq:core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="urn:activemq:core ">
 
-      <name>CFBROKERn1</name>
+      <name>broker</name>
 
-<!--Configuracion HA-->
-
-<connectors>
-    <connector name="cfbrokern1-connector">tcp://192.168.10.8:61616</connector>
-    <connector name="cfbrokern2-connector">tcp://192.168.10.10:61616</connector>
-  </connectors> 
-
-<acceptors>
-    <acceptor name="cfbrokern1-connector">tcp://192.168.10.8:61616</connector>
-    <acceptor name="cfbrokern2-connector">tcp://192.168.10.10:61616</connector>
-  </acceptors> 
-
-<cluster-connections>
-        <cluster-connection name="cluster-pcf">
-          <address></address>
-          <connector-ref>cfbrokern1-connector</connector-ref>
-          <check-period>1000</check-period>
-          <connection-ttl>5000</connection-ttl>
-          <min-large-message-size>50000</min-large-message-size>
-          <call-timeout>5000</call-timeout>
-          <retry-interval>500</retry-interval>
-          <retry-interval-multiplier>1.0</retry-interval-multiplier>
-          <max-retry-interval>5000</max-retry-interval>
-          <initial-connect-attempts>-1</initial-connect-attempts>
-          <reconnect-attempts>-1</reconnect-attempts>
-          <use-duplicate-detection>true</use-duplicate-detection>
-          <message-load-balancing>ON_DEMAND</message-load-balancing>
-          <max-hops>1</max-hops>
-          <confirmation-window-size>32000</confirmation-window-size>
-          <call-failover-timeout>30000</call-failover-timeout>
-          <notification-interval>1000</notification-interval>
-          <notification-attempts>2</notification-attempts>
-          <discovery-group-ref discovery-group-name="discovery-pcf-group"/>
-       </cluster-connection>
-</cluster-connections>
-
-
-  <cluster-user>cluster-pcf</cluster-user>
-  <cluster-password>pcf1234</cluster-password>
-
-<broadcast-groups>
-        <broadcast-group name="broadcast-pcf-group">
-        <!--   <local-bind-address>172.16.22.116</local-bind-address>  -->
-               <local-bind-port>5433</local-bind-port>
-               <group-address>${udp-address:231.7.7.7}</group-address>
-               <group-port>9876</group-port>
-               <broadcast-period>100</broadcast-period>
-               <connector-ref>cfbrokern1-connector</connector-ref>
-       </broadcast-group>
-</broadcast-groups>
-
-<discovery-groups>
-        <discovery-group name="discovery-pcf-group">
-        <!-- <local-bind-address>172.16.22.116</local-bind-address>  -->
-         <group-address>${udp-address:231.7.7.7}</group-address>
-         <group-port>9876</group-port>
-         <refresh-timeout>10000</refresh-timeout>
-        </discovery-group>
-</discovery-groups>
-
-  <ha-policy>
-    <replication>
-     <master>
-        <check-for-live-server>true</check-for-live-server>
-     </master>
-    </replication>
-  </ha-policy>
-<!--Configuracion HA-->
 
       <persistence-enabled>true</persistence-enabled>
 
@@ -139,14 +71,14 @@ under the License.
       
       <!--
        This value was determined through a calculation.
-       Your system could perform 62.5 writes per millisecond
+       Your system could perform 7.58 writes per millisecond
        on the current journal configuration.
-       That translates as a sync write every 16000 nanoseconds.
+       That translates as a sync write every 132000 nanoseconds.
 
        Note: If you specify 0 the system will perform writes directly to the disk.
              We recommend this to be 0 if you are using journalType=MAPPED and journal-datasync=false.
       -->
-      <journal-buffer-timeout>16000</journal-buffer-timeout>
+      <journal-buffer-timeout>132000</journal-buffer-timeout>
 
 
       <!--
@@ -199,7 +131,7 @@ under the License.
       <critical-analyzer-policy>HALT</critical-analyzer-policy>
 
       
-      <page-sync-timeout>180000</page-sync-timeout>
+      <page-sync-timeout>1932000</page-sync-timeout>
 
 
       <!-- the system will enter into page mode once you hit this limit. This is an estimate in bytes of how much the messages are using in memory

@@ -139,25 +139,9 @@
                         <password>sa</password>
                     </security>
                 </datasource>
-                <datasource jndi-name="java:/ORADefaultDS" pool-name="ORADefaultDS" enabled="true" statistics-enabled="true">
-                    <connection-url>jdbc:oracle:thin:@10.97.135.31:1530/DESA19</connection-url>
-                    <driver>oracle</driver>
-                    <pool>
-                        <min-pool-size>1</min-pool-size>
-                        <max-pool-size>5</max-pool-size>
-                        <prefill>true</prefill>
-                    </pool>
-                    <security>
-                        <user-name>PCFDBA</user-name>
-                        <password>pcfdba34</password>
-                    </security>
-                </datasource>
                 <drivers>
                     <driver name="h2" module="com.h2database.h2">
                         <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
-                    </driver>
-                    <driver name="oracle" module="com.oracle">
-                        <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
                     </driver>
                 </drivers>
             </datasources>
@@ -516,7 +500,7 @@
                 </in-vm-acceptor>
                 <connection-factory name="InVmConnectionFactory" entries="java:/ConnectionFactory" connectors="in-vm"/>
                 <pooled-connection-factory name="activemq-ra" entries="java:/JmsXA java:jboss/DefaultJMSConnectionFactory" connectors="in-vm" transaction="xa"/>
-                <pooled-connection-factory name="remote-artemis" entries="java:/RemoteJmsXA java:jboss/RemoteJmsXA" connectors="remote-artemis" ha="false" user="pcf" password="pcf1234" min-pool-size="15" max-pool-size="30" statistics-enabled="true">
+                <pooled-connection-factory name="remote-artemis" entries="java:/RemoteJmsXA java:jboss/RemoteJmsXA" connectors="remote-artemis" ha="false" user="admin" password="admin1234" min-pool-size="15" max-pool-size="30" statistics-enabled="true">
                     <inbound-config rebalance-connections="true" setup-attempts="-1" setup-interval="5000"/>
                 </pooled-connection-factory>
             </server>
@@ -543,32 +527,20 @@
                         <property name="java.naming.factory.initial" value="org.apache.activemq.artemis.jndi.ActiveMQInitialContextFactory"/>
                         <property name="java.naming.provider.url" value="tcp://192.168.10.8:61616"/>
                         <property name="connectionFactory.ConnectionFactory" value="tcp://192.168.10.8:61616"/>
-                        <property name="queue.COREtoB2B" value="COREtoB2B"/>
-                        <property name="queue.B2BtoCORE" value="B2BtoCORE"/>
-                        <property name="queue.B2BtoDGI" value="B2BtoDGI"/>
-                        <property name="queue.B2BtoEClientes" value="B2BtoEClientes"/>
+                        <property name="queue.COREtoEXT" value="COREtoEXT"/>
+                        <property name="queue.EXTtoCORE" value="EXTtoCORE"/>
+                        <property name="queue.EXTtoEXT" value="EXTtoEXT"/>
                     </environment>
                 </external-context>
-                <lookup name="java:/COREtoB2B" lookup="java:global/remoteContext/COREtoB2B"/>
-                <lookup name="java:/B2BtoCORE" lookup="java:global/remoteContext/B2BtoCORE"/>
-                <lookup name="java:/B2BtoDGI" lookup="java:global/remoteContext/B2BtoDGI"/>
-                <lookup name="java:/B2BtoEClientes" lookup="java:global/remoteContext/B2BtoEClientes"/>
+                <lookup name="java:/COREtoEXT" lookup="java:global/remoteContext/COREtoEXT"/>
+                <lookup name="java:/EXTtoCORE" lookup="java:global/remoteContext/EXTtoCORE"/>
+                <lookup name="java:/EXTtoEXT" lookup="java:global/remoteContext/EXTtoEXT"/>
             </bindings>
             <remote-naming/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:pojo:1.0"/>
         <subsystem xmlns="urn:jboss:domain:remoting:4.0">
             <http-connector name="http-remoting-connector" connector-ref="default" sasl-authentication-factory="application-sasl-authentication"/>
-            <outbound-connections>
-                <remote-outbound-connection name="remote-ejb-connection" outbound-socket-binding-ref="remote-ejb-connection" username="ejb" security-realm="ejb-security-realm" protocol="remote+http">
-                    <properties>
-                        <property name="SASL_POLICY_NOANONYMOUS" value="false"/>
-                        <property name="SSL_ENABLED" value="true"/>
-                        <property name="KEEP_ALIVE" value="true"/>
-                        <property name="org.jboss.remoting3.RemotingOptions.HEARTBEAT_INTERVAL" value="1000"/>
-                    </properties>
-                </remote-outbound-connection>
-            </outbound-connections>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:request-controller:1.0"/>
         <subsystem xmlns="urn:jboss:domain:resource-adapters:6.1"/>
@@ -619,7 +591,7 @@
                 <application-security-domain name="other" security-domain="ApplicationDomain"/>
             </application-security-domains>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:webservices:2.0" statistics-enabled="${wildfly.webservices.statistics-enabled:${wildfly.statistics-enabled:false}}">
+        <subsystem xmlns="urn:jboss:domain:webservices:2.0" statistics-enabled="true">
             <wsdl-host>${jboss.bind.address:192.168.10.2}</wsdl-host>
             <wsdl-port>8087</wsdl-port>
             <endpoint-config name="Standard-Endpoint-Config"/>
@@ -666,10 +638,7 @@
             <remote-destination host="${jboss.mail.server.host:localhost}" port="${jboss.mail.server.port:25}"/>
         </outbound-socket-binding>
         <outbound-socket-binding name="remote-artemis">
-            <remote-destination host="10.97.68.53" port="61616"/>
-        </outbound-socket-binding>
-        <outbound-socket-binding name="remote-ejb-connection">
-            <remote-destination host="10.97.68.53" port="8088"/>
+            <remote-destination host="localhost" port="61616"/>
         </outbound-socket-binding>
     </socket-binding-group>
 </server>

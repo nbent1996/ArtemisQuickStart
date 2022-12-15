@@ -16,16 +16,16 @@
 # under the License.
 
 ARTEMIS_HOME='/opt/amq'
-ARTEMIS_INSTANCE='/home/jboss/broker'
-ARTEMIS_DATA_DIR='/home/jboss/broker/data'
-ARTEMIS_ETC_DIR='/home/jboss/broker/etc'
-ARTEMIS_OOME_DUMP='/home/jboss/broker/log/oom_dump.hprof'
+ARTEMIS_INSTANCE='/home/broker'
+ARTEMIS_DATA_DIR='/home/broker/data'
+ARTEMIS_ETC_DIR='/home/broker/etc'
+ARTEMIS_OOME_DUMP='/home/broker/log/oom_dump.hprof'
 
 # The logging config will need an URI
 # this will be encoded in case you use spaces or special characters
 # on your directory structure
-ARTEMIS_INSTANCE_URI='file:/home/jboss/broker/'
-ARTEMIS_INSTANCE_ETC_URI='file:/home/jboss/broker/etc/'
+ARTEMIS_INSTANCE_URI='file:/home/broker/'
+ARTEMIS_INSTANCE_ETC_URI='file:/home/broker/etc/'
 
 # Cluster Properties: Used to pass arguments to ActiveMQ Artemis which can be referenced in broker.xml
 #ARTEMIS_CLUSTER_PROPS="-Dactivemq.remoting.default.port=61617 -Dactivemq.remoting.amqp.port=5673 -Dactivemq.remoting.stomp.port=61614 -Dactivemq.remoting.hornetq.port=5446"

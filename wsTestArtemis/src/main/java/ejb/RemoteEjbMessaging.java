@@ -11,7 +11,4 @@ public interface RemoteEjbMessaging {
 
     @WebMethod(operationName="enviarMensajesConFilter")
     boolean enviarMensajesConFilter(@WebParam(name = "QueueJNDI") String QueueJNDI, @WebParam(name = "cantMensajes") int cantMensajes, @WebParam(name = "filter") String filter);
-
-    @WebMethod(operationName="enviarCDATACola")
-    boolean enviarCDATACola(@WebParam(name = "QueueJNDI") String QueueJNDI, @WebParam(name = "CDATA") String CDATA);
 }
